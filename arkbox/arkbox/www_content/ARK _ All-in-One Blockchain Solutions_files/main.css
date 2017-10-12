@@ -1,0 +1,393 @@
+/*------------- BASE IMPORT -------------*/
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+@import url("https://fonts.googleapis.com/css?family=Comfortaa:400,700");
+@font-face {
+  font-family: "ProximaNova-Regular";
+  src: url("../fonts/ProximaNovaRegular.otf"); }
+@font-face {
+  font-family: "ProximaNova-Semibold";
+  src: url("../fonts/ProximaNovaSemibold.otf"); }
+html,
+body {
+  overflow-x: hidden;
+  font-size: 12px; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+ul,
+ol,
+span {
+  margin: 0;
+  padding: 0; }
+
+a {
+  transition: all .25s; }
+  a:hover {
+    opacity: 0.5; }
+
+ul,
+ol {
+  list-style: none;
+  padding-left: 0; }
+
+::selection {
+  background-color: #f1373a;
+  color: #ffffff; }
+
+@media screen and (min-width: 600px) {
+  html,
+  body {
+    font-size: 14px; } }
+@media screen and (min-width: 992px) {
+  html,
+  body {
+    font-size: 15px; } }
+@media screen and (min-width: 1200px) {
+  html,
+  body {
+    font-size: 16px; } }
+    
+/*------------- UTILITIES IMPORT -------------*/
+/*------------- UTILITY CLASSES -------------*/
+.text__paragraph {
+  font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+  font-size: 1.333rem;
+  line-height: 2.5rem;
+  color: #ffffff; }
+  @media screen and (min-width: 600px) {
+    .text__paragraph {
+      font-size: 1rem;
+      line-height: 1.875rem; } }
+  .text__paragraph--brand {
+    color: #395174; }
+  .text__paragraph--text {
+    color: #395174; }
+  .text__paragraph--black {
+    color: #282828; }
+  .text__paragraph--link {
+    position: relative;
+    transition: all .25s; }
+    .text__paragraph--link:link, .text__paragraph--link:hover, .text__paragraph--link:focus, .text__paragraph--link:visited {
+      color: #1a23e7;
+      text-decoration: none; }
+    .text__paragraph--link:hover {
+      opacity: 0.5; }
+      .text__paragraph--link:hover:after {
+        content: "";
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: #1a23e7; }
+
+.cta {
+  height: 5rem;
+  width: 21.667rem;
+  position: relative;
+  color: #ffffff;
+  font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+  font-size: 1.333rem;
+  line-height: 2.1667rem;
+  text-align: center;
+  display: block; }
+  .cta:link, .cta:hover, .cta:focus, .cta:visited {
+    color: #ffffff;
+    text-decoration: none; }
+  @media screen and (min-width: 600px) {
+    .cta {
+      height: 3.75rem;
+      width: 16.25rem;
+      font-size: 1rem;
+      line-height: 1.625rem; } }
+  .cta--small {
+    width: 14.5833rem;
+    background-color: transparent; }
+    @media screen and (min-width: 600px) {
+      .cta--small {
+        width: 10.9375rem; } }
+  .cta--outline {
+    border: 1px solid #172130;
+    color: #1a23e7;
+    transition: all .25s;
+    background-color: transparent; }
+    .cta--outline:link, .cta--outline:hover, .cta--outline:focus, .cta--outline:visited {
+      color: #1a23e7;
+      text-decoration: none; }
+    .cta--outline:hover {
+      border-color: #1a23e7;
+      background-color: #f7f9fe; }
+  .cta--center {
+    margin: 0 auto; }
+  .cta:hover {
+    opacity: 1; }
+    .cta:hover .cta__back {
+      top: -8px;
+      right: -8px; }
+  .cta__label {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; }
+  .cta__front {
+    width: 100%;
+    height: 100%;
+    background-color: #345ff2;
+    box-shadow: 0 0 18px 0 rgba(64, 104, 243, 0.23);
+    position: relative;
+    z-index: 1; }
+  .cta__back {
+    background-image: -moz-linear-gradient(103deg, #345ff2 0%, #b4c5fe 100%);
+    background-image: -webkit-linear-gradient(103deg, #345ff2 0%, #b4c5fe 100%);
+    background-image: -ms-linear-gradient(103deg, #345ff2 0%, #b4c5fe 100%);
+    box-shadow: 0 0 18px 0 rgba(64, 104, 243, 0.23);
+    opacity: 0.322;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    right: -10px;
+    transition: all .25s; }
+
+/*------------- MODULES IMPORT -------------*/
+/*------------- TABLE OF CONTENTS -------------*/
+/*       
+            
+    1. WELCOME          
+    3. PROCESS         
+    5. READ-DOC             
+    6. FOOTER                      
+    9. HEADER            
+    10. ECOSYSTEM       
+        
+*/
+/*------------- 1. WELCOME -------------*/
+.welcome {
+  background-color: #171820;
+  background-repeat: no-repeat;
+  background-position: center;
+/*   padding-top: 3.333rem; */
+  background-size: 100%;
+  position: relative;
+  z-index: 0; }
+  .welcome__bg {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    transform: translateY(-20%);
+    width: 100%;
+    height: auto;
+    pointer-events: none; }
+  .welcome__content {
+    padding-top: 12.083rem;
+    padding-bottom: 4.1667rem; }
+
+  .welcome__intro {
+    color: #ffffff;
+    font-family: "Comfortaa", Helvetica, Arial, sans-serif;
+    text-align: left; }
+    .welcome__intro-title {
+      color: #ffffff;
+      font-size: 3.5rem;
+      letter-spacing: 0.06em;
+      padding-top: 0px;
+      line-height: 1; }
+      @media screen and (min-width: 600px) {
+        .welcome__intro-title {
+          font-size: 2.5rem; } }
+    .welcome__intro-subtitle {
+	  color: #ffffff;
+      font-size: 2rem;
+      margin-top: 0.5rem; }
+      @media screen and (min-width: 600px) {
+        .welcome__intro-subtitle {
+          font-size: 1.375rem; } }
+  
+  .welcome__about {
+      margin-top: 25rem;
+    margin-bottom: 5rem; }
+    @media screen and (min-width: 600px) {
+      .welcome__about {
+        margin-bottom: 5rem; } }
+    .welcome__about-title {
+      font-family: "Comfortaa", Helvetica, Arial, sans-serif;
+      color: #ffffff;
+      font-size: 3.333rem;
+      letter-spacing: 0.08em;
+      font-weight: 400; }
+      .welcome__about-title--bold {
+        font-weight: 700; }
+    .welcome__about-text {
+      font-family: "ProximaNova-Regular", Helvetica, Arial, sans-serif;
+      color: #ffffff;
+      font-size: 1.333rem;
+      line-height: 2.5rem;
+      margin-top: 2.5rem; }
+
+
+
+
+/*------------- 3. PROCESS -------------*/
+
+
+@keyframes pulse {
+  0% {
+    transform: translate(-50%, 140%) scale(0) rotateZ(60deg);
+    color: #71757b; }
+  50% {
+    transform: translate(-50%, 140%) scale(1) rotateZ(60deg);
+    color: #191c27; }
+  100% {
+    transform: translate(-50%, 140%) scale(0) rotateZ(60deg);
+    color: #71757b; } }
+@keyframes pulseAlt {
+  0% {
+    transform: translate(-50%, 140%) scale(0) rotateZ(-60deg);
+    color: #71757b; }
+  50% {
+    transform: translate(-50%, 140%) scale(1) rotateZ(-60deg);
+    color: #191c27; }
+  100% {
+    transform: translate(-50%, 140%) scale(0) rotateZ(-60deg);
+    color: #71757b; } }
+@keyframes color {
+  0% {
+    color: #71757b; }
+  50% {
+    color: #f1373a; }
+  100% {
+    color: #71757b; } }
+    
+
+
+/*------------- 5. READ-DOC -------------*/
+.read-doc {
+  border-top: 1px solid #ececec;
+  padding: 6.667rem 10px 7.91667rem 10px; }
+  @media screen and (min-width: 600px) {
+    .read-doc {
+      padding: 5rem 10px 8.125rem 10px; } }
+  .read-doc__wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between; }
+  .read-doc__title {
+    font-family: "Comfortaa", Helvetica, Arial, sans-serif;
+    font-size: 2.5rem;
+    color: #172130;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.5rem; }
+    @media screen and (min-width: 600px) {
+      .read-doc__title {
+        font-size: 1.875rem; } }
+  .read-doc__text {
+    margin-bottom: 2.91667rem; }
+    @media screen and (min-width: 600px) {
+      .read-doc__text {
+        margin-bottom: 2.1875rem; } }
+
+/*------------- 6. FOOTER -------------*/
+.footer {
+  background-color: #f0f0f0;
+  padding: 5rem 30px 3.125rem 30px; }
+  .footer__content {
+    padding-bottom: 4.1667rem; }
+    @media screen and (min-width: 600px) {
+      .footer__content {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding-bottom: 3.75rem; } }
+
+/*------------- 9. MENU -------------*/
+.menu-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: 2.5rem;
+  z-index: 2; }
+  .menu-container .menu {
+    margin: 0 auto;
+    z-index: 99999 !important;
+    height: auto;
+    display: inline-flex;
+    align-items: center;
+    box-shadow: -0.349px 3.985px 15px 0px rgba(66, 62, 62, 0.09); }
+    .menu-container .menu__logo {
+      background-color: #f1373a;
+      height: 6.6667rem;
+      min-width: 6.6667rem;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .menu-container .menu__logo-img {
+        width: 100px;
+        max-width: 37px;
+        height: auto; }
+
+/*------------- 10. ECOSYSTEM -------------*/
+  .ecosystem__logos-wrapper {
+    text-align: center;
+    border-bottom: 1px solid #e7e7e7;
+    padding-bottom: 4.1667rem;
+    margin-bottom: 4.1667rem; }
+    @media screen and (min-width: 600px) {
+      .ecosystem__logos-wrapper {
+        margin-bottom: 3.125rem;
+        padding-bottom: 3.125rem; } }
+    .ecosystem__logos-wrapper__title {
+      font-family: "Comfortaa", Helvetica, Arial, sans-serif;
+      letter-spacing: 0.08em;
+      color: #172130;
+      font-size: 1.667rem;
+      font-weight: 700;
+      margin-bottom: 2rem; }
+      @media screen and (min-width: 600px) {
+        .ecosystem__logos-wrapper__title {
+          font-size: 1.25rem;
+          margin-bottom: 1.5rem; } }
+  .ecosystem__logos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    @media screen and (min-width: 600px) {
+      .ecosystem__logos {
+        padding: 0 0; } }
+    .ecosystem__logos-item {
+      transition: all .25s;
+      text-align: center; }
+      @media screen and (min-width: 600px) {
+        .ecosystem__logos-item {
+          display: block;
+          width: 12.5%; } }
+      .ecosystem__logos-item:focus {
+        outline: none; }
+      .ecosystem__logos-item:hover {
+        opacity: 0.5; }
+      .ecosystem__logos-item + .ecosystem__logos-item {
+        margin-left: 2.375rem; }
+        @media screen and (min-width: 992px) {
+          .ecosystem__logos-item + .ecosystem__logos-item {
+            margin-left: 3.375rem; } }
+      .ecosystem__logos-item__img {
+        max-width: 100%;
+        margin: 0 auto; }
+
+.slick-track {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center; }
+
+
+
+
+/*# sourceMappingURL=main.css.map */
